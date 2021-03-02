@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Javascript",
+        "es": "ES6",
+        "frameworks": ["React.js", "Next.js", "Node.js"] 
+    }, 
+    {
+        "name": "HTML"
+    }, 
+    {
+        "name": "CSS",
+        "frameworks": ["TailwindCSS"]
+    },
+    {
+        "name": "Git"
+    },
+    {
+        "name": "SQL",
+        "frameworks": ["PostgreSQL"]
+    },
+    {
+        "name": "GraphQL",
+        "frameworks": ["ApolloGraphQL"]
+    }
+]
