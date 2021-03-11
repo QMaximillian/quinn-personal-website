@@ -7,6 +7,8 @@ module.exports = {
   variants: {
     extend: {
       padding: ['first'],
+      textColor: ['active'],
+      borderColor: ['active'],
     },
   },
   plugins: [],
