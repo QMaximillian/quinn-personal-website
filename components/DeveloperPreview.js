@@ -3,7 +3,7 @@ import skills from '../skills.json'
 
 function DeveloperPreview() {
   return (
-    <div className="tracking-wide text-white font-bold flex flex-col justify-center items-start w-10/12 min-h-full">
+    <div className="tracking-wide text-white font-bold flex flex-col justify-center items-start h-full">
       <div>
         <div className="text-green-300 text-7xl">I&apos;m Quinn</div>
         <div className="text-2xl font-semibold">
@@ -11,7 +11,7 @@ function DeveloperPreview() {
         </div>
         <button
           type="button"
-          className="rounded-sm p-2 mt-6 w-1/2 text-lg border-2 hover:text-green-300 hover:border-green-300 focus:text-green-300 focus:border-green-300 active:text-green-300 active:border-green-300"
+          className="rounded-sm py-2 px-8 mt-6 min-w-min max-w-xs text-lg text-center border-2 hover:text-green-300 hover:border-green-300 focus:text-green-300 focus:border-green-300 active:text-green-300 active:border-green-300"
         >
           Contact Me
         </button>
