@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+
+  body {
+    @apply h-screen w-screen
+  }
+  
   #__next {
-    @apply h-screen w-screen;
+    @apply h-full w-full;
   }
 }
