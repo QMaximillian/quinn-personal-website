@@ -1,6 +1,7 @@
 @tailwind base;
 @layer base {
-  #__next {
+  
+  div#__next {
     @apply h-screen w-screen;
   }
 }
