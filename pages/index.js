@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
       <main className="h-full w-full flex flex-col md:flex-row justify-start items-center bg-black md:p-8">
         <div className="h-full justify-center">
-          <div className="w-full sm:w-10/12 md:w-1/2 min-h-full md:mr-2 flex items-center px-4">
+          <div className="w-full sm:w-10/12 min-h-full md:mr-2 flex items-center px-4">
             <DeveloperPreview />
           </div>
           {/* Placeholder Component 
