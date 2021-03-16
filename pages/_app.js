@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
-import '../styles/globals.css'
 import Navigation from '../components/Navigation'
+import '../styles/globals.css'
+import BaseLayout from '../layouts/BaseLayout'
+import { motion, AnimatePresence } from 'framer-motion'
 // @font-face {
 //   font-family: 'Cera Pro Regular';
 //   src: url('/fonts/CeraPRO-Regular.ttf');
@@ -24,17 +26,31 @@ import Navigation from '../components/Navigation'
 //   height: 100vh;
 // }
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   return (
-    <div className="h-full w-full bg-black flex flex-col">
-      <Component {...pageProps} />
-      <Navigation />
-    </div>
+    <BaseLayout>
+      <AnimatePresence exitBeforeEnter>
+        <main className="h-screen w-full bg-black flex flex-col">
+          <motion.div
+            key={router.route}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="h-full flex justify-center p-6 mb-10"
+          >
+            <Component {...pageProps} />
+          </motion.div>
+        </main>
+      </AnimatePresence>
+    </BaseLayout>
   )
 }
 
 MyApp.propTypes = {
   Component: PropTypes.func.isRequired,
   pageProps: PropTypes.shape({}).isRequired,
+  router: PropTypes.shape({
+    route: PropTypes.string.isRequired,
+  }).isRequired,
 }
 export default MyApp
