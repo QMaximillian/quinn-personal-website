@@ -1,24 +1,23 @@
 import * as React from 'react'
 import skills from '../skills.json'
 
+const lorem =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
 function DeveloperPreview() {
   return (
-    <div className="w-full tracking-wide text-white font-bold flex flex-col justify-center items-start h-full">
+    <div className="w-full tracking-wide text-white font-bold flex flex-col justify-center items-center h-full">
       <div className="w-full">
+        <div className="text-yellow-500 text-6xl md:text-7xl">Hello! </div>
         <div className="text-green-300 text-6xl md:text-7xl">
           I&apos;m Quinn
         </div>
+
         <div className="text-xl md:text-2xl font-semibold">
-          Web Developer • Runner • Baseball
+          Junior Web Developer
         </div>
-        <button
-          type="button"
-          className="w-full sm:w-60 rounded-sm py-2 mt-6 sm:min-w-min sm:max-w-xs text-md md:text-lg text-center border-2 hover:text-green-300 hover:border-green-300 focus:text-green-300 focus:border-green-300 active:text-green-300 active:border-green-300"
-        >
-          Contact Me
-        </button>
+        <div className="mt-4 sm:text-2xl font-light ">{lorem}</div>
       </div>
-      <div className="mt-5 w-full">
+      {/* <div className="mt-5 w-full">
         <div className="text-2xl md:text-4xl text-green-300 underline">
           Skills
         </div>
@@ -42,7 +41,7 @@ function DeveloperPreview() {
             </div>
           )
         })}
-      </div>
+      </div> */}
     </div>
   )
 }

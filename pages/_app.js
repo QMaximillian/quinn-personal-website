@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import '../styles/globals.css'
-
+import Navigation from '../components/Navigation'
 // @font-face {
 //   font-family: 'Cera Pro Regular';
 //   src: url('/fonts/CeraPRO-Regular.ttf');
@@ -26,9 +26,10 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <div className="h-full w-full bg-black flex flex-col">
       <Component {...pageProps} />
-    </>
+      <Navigation />
+    </div>
   )
 }
 
