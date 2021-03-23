@@ -7,9 +7,9 @@
   body {
     @apply h-full w-full;
   }
+}
 
-  div#__next {
-    height: 100%;
-    width: 100%;
-  }
+div#__next {
+  height: 100%;
+  width: 100%;
 }

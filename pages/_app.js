@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types'
-import Navigation from '../components/Navigation'
-import '../styles/globals.css'
-import BaseLayout from '../layouts/BaseLayout'
 import { motion, AnimatePresence } from 'framer-motion'
+import BaseLayout from '../layouts/BaseLayout'
+import '../styles/globals.css'
 // @font-face {
 //   font-family: 'Cera Pro Regular';
 //   src: url('/fonts/CeraPRO-Regular.ttf');
@@ -35,7 +34,7 @@ function MyApp({ Component, pageProps, router }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="h-full flex justify-center p-6 mb-10"
+          className="h-full flex justify-center"
         >
           <Component {...pageProps} />
         </motion.div>
