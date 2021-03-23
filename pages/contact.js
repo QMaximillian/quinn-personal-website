@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import ContactForm from '../components/ContactForm'
 
 export default function Contact() {
   return (
@@ -7,7 +8,7 @@ export default function Contact() {
         <title>Contact</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="justify-start overflow-y-auto" />
+      <ContactForm />
     </>
   )
 }
