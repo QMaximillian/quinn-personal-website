@@ -30,17 +30,15 @@ function MyApp({ Component, pageProps, router }) {
   return (
     <BaseLayout>
       <AnimatePresence exitBeforeEnter>
-        <main className="h-screen w-full bg-black flex flex-col">
-          <motion.div
-            key={router.route}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="h-full flex justify-center p-6 mb-10"
-          >
-            <Component {...pageProps} />
-          </motion.div>
-        </main>
+        <motion.div
+          key={router.route}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="h-full flex justify-center p-6 mb-10"
+        >
+          <Component {...pageProps} />
+        </motion.div>
       </AnimatePresence>
     </BaseLayout>
   )

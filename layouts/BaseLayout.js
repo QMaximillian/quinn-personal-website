@@ -3,9 +3,9 @@ import Navigation from '../components/Navigation'
 
 function BaseLayout({ children }) {
   return (
-    <main>
+    <main className="h-full min-h-full w-full bg-black flex flex-col relative">
       {children}
-      <div className="absolute right-0 left-0 bottom-0 z-10 bg-black">
+      <div className="bg-black">
         <Navigation />
       </div>
     </main>

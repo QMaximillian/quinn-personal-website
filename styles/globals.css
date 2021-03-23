@@ -8,8 +8,4 @@
   div#__next {
     @apply h-full w-full;
   }
-
-  main {
-    @apply min-h-full;
-  }
 }

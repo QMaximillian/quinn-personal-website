@@ -7,7 +7,7 @@ export default function Contact() {
         <title>Contact</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="h-screen justify-start overflow-y-auto" />
+      <div className="justify-start overflow-y-auto" />
     </>
   )
 }
