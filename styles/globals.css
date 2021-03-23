@@ -4,8 +4,12 @@
 
 @layer base {
   html,
-  body,
-  div#__next {
+  body {
     @apply h-full w-full;
+  }
+
+  div#__next {
+    height: 100%;
+    width: 100%;
   }
 }
