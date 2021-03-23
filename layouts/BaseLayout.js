@@ -4,7 +4,7 @@ import Navigation from '../components/Navigation'
 function BaseLayout({ children }) {
   return (
     <main className="h-full min-h-full w-full bg-black flex flex-col relative">
-      {children}
+      <section className="flex flex-grow px-6 pt-6">{children}</section>
       <div className="bg-black">
         <Navigation />
       </div>
