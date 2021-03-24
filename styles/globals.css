@@ -7,6 +7,17 @@
   body {
     @apply h-full w-full;
   }
+
+  body {
+    @apply relative;
+  }
+  label {
+    @apply block;
+  }
+}
+
+#contact-form {
+  height: calc(100vh - 3rem);
 }
 div#__next {
   height: 100%;

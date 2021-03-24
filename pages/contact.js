@@ -8,7 +8,12 @@ export default function Contact() {
         <title>Contact</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ContactForm />
+      <div
+        id="contact-form"
+        className="border-red-500 border  w-full overflow-y-scroll flex flex-col p-4 max-w-2xl"
+      >
+        <ContactForm />
+      </div>
     </>
   )
 }

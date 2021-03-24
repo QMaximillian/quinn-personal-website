@@ -36,7 +36,7 @@ function MyApp({ Component, pageProps, router }) {
           initial={{ opacity: reducedMotionOpacity }}
           animate={{ opacity: 1 }}
           exit={{ opacity: reducedMotionOpacity }}
-          className="h-full flex justify-center"
+          className="flex flex-grow justify-center"
         >
           <Component {...pageProps} />
         </motion.div>

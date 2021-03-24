@@ -28,7 +28,7 @@ export default (req, res) => {
       console.log({ error })
     } else {
       console.log({ response })
-      res.send({ message: 'Email sent' })
+      // res.send({ message: 'Email sent' })
     }
   })
 
