@@ -3,22 +3,32 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    font-size: 18px;
+  }
+
   html,
   body {
     @apply h-full w-full;
   }
 
-  body {
-    @apply relative;
+  h1 {
+    @apply text-4xl;
   }
-  label {
-    @apply block;
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  p {
+    @apply leading-relaxed;
   }
 }
 
-#contact-form {
-  height: calc(100vh - 3rem);
-}
 div#__next {
   height: 100%;
   width: 100%;

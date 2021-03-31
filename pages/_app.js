@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
-import BaseLayout from '../layouts/BaseLayout'
+
 import '../styles/globals.css'
 // @font-face {
 //   font-family: 'Cera Pro Regular';
@@ -29,19 +29,17 @@ function MyApp({ Component, pageProps, router }) {
   const shouldReduceMotion = useReducedMotion()
   const reducedMotionOpacity = shouldReduceMotion ? 1 : 0
   return (
-    <BaseLayout>
-      <AnimatePresence exitBeforeEnter>
-        <motion.div
-          key={router.route}
-          initial={{ opacity: reducedMotionOpacity }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: reducedMotionOpacity }}
-          className="flex flex-grow justify-center"
-        >
-          <Component {...pageProps} />
-        </motion.div>
-      </AnimatePresence>
-    </BaseLayout>
+    <AnimatePresence exitBeforeEnter>
+      <motion.div
+        key={router.route}
+        initial={{ opacity: reducedMotionOpacity }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: reducedMotionOpacity }}
+        // className="flex flex-grow justify-center"
+      >
+        <Component {...pageProps} />
+      </motion.div>
+    </AnimatePresence>
   )
 }
 
