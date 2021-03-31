@@ -13,6 +13,7 @@ module.exports = {
       padding: ['first'],
       textColor: ['active'],
       borderColor: ['active'],
+      borderWidth: ['first', 'last'],
     },
   },
   plugins: [],

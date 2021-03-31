@@ -33,3 +33,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# other
+
+public/fonts/apercu-regular.ttf

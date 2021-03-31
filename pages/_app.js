@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
+import Navigation from '../components/Navigation'
 
 import '../styles/globals.css'
 // @font-face {
@@ -30,6 +31,7 @@ function MyApp({ Component, pageProps, router }) {
   const reducedMotionOpacity = shouldReduceMotion ? 1 : 0
   return (
     <AnimatePresence exitBeforeEnter>
+      <Navigation />
       <motion.div
         key={router.route}
         initial={{ opacity: reducedMotionOpacity }}

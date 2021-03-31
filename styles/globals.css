@@ -2,14 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'apercu-regular';
+  src: url('/fonts/apercu-regular.ttf');
+}
+
 @layer base {
   :root {
     font-size: 18px;
+    font-family: apercu-regular;
+    --primary-gradient: linear-gradient(to right, #222f3d 40%, #314458);
   }
 
   html,
   body {
     @apply h-full w-full;
+  }
+
+  nav {
+    background-color: #2c3539;
   }
 
   h1 {
