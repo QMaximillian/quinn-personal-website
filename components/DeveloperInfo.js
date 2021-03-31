@@ -2,11 +2,11 @@ import * as React from 'react'
 
 const lorem =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-function DeveloperPreview() {
+function DeveloperInfo() {
   return (
     <div
       style={{ background: 'var(--primary-gradient)' }}
-      className="text-white p-4 border-2 border-red-500 max-w-6xl w-full tracking-wide font-bold flex flex-col justify-center items-center"
+      className=" text-white p-4 border-2 border-red-500 w-full tracking-wide font-bold flex flex-col justify-center items-center"
     >
       <div className="w-full">
         <h1 className="text-yellow-500 text-5xl">
@@ -23,6 +23,6 @@ function DeveloperPreview() {
   )
 }
 
-DeveloperPreview.displayName = 'DeveloperPreview'
+DeveloperInfo.displayName = 'DeveloperInfo'
 
-export default DeveloperPreview
+export default DeveloperInfo
