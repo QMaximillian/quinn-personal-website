@@ -8,6 +8,9 @@ import GradientBackground from '../components/GradientBackground'
 import Placeholder from '../components/Placeholder'
 import SectionBreak from '../components/SectionBreak'
 import Contact from '../components/Contact'
+import ProjectPeak from '../components/ProjectPeak'
+import ProjectList from '../components/ProjectList'
+import projects from '../projects.json'
 
 export default function Home() {
   const router = useRouter()
@@ -23,7 +26,7 @@ export default function Home() {
       opacity: 0,
     },
   }
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   function handleOpen() {
     setIsOpen((state) => !state)
@@ -77,8 +80,18 @@ export default function Home() {
             <Skills />
           </div>
           <SectionBreak />
-          <Placeholder />
-          <Contact />
+          <div id="projects">
+            <ProjectList>
+              {projects.map((project) => (
+                <ProjectPeak {...project} />
+              ))}
+            </ProjectList>
+          </div>
+
+          <SectionBreak />
+          <div id="contact">
+            <Contact />
+          </div>
         </GradientBackground>
       </main>
     </>

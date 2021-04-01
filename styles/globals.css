@@ -10,7 +10,7 @@
 @layer base {
   :root {
     font-size: 18px;
-    font-family: apercu-regular;
+    font-family: apercu-regular, sans-serif;
     --primary-gradient: linear-gradient(to right, #222f3d 40%, #314458);
     @apply text-white;
   }
@@ -18,6 +18,7 @@
   html,
   body {
     @apply h-full w-full;
+    scroll-behavior: smooth;
   }
 
   nav {
