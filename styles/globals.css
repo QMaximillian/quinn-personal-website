@@ -12,6 +12,7 @@
     font-size: 18px;
     font-family: apercu-regular;
     --primary-gradient: linear-gradient(to right, #222f3d 40%, #314458);
+    @apply text-white;
   }
 
   html,
@@ -37,6 +38,10 @@
 
   p {
     @apply leading-relaxed;
+  }
+
+  li {
+    list-style-type: none;
   }
 }
 

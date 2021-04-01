@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps, router }) {
         initial={{ opacity: reducedMotionOpacity }}
         animate={{ opacity: 1 }}
         exit={{ opacity: reducedMotionOpacity }}
-        // className="flex flex-grow justify-center"
+        style={{ background: 'var(--primary-gradient' }}
       >
         <Component {...pageProps} />
       </motion.div>

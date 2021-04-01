@@ -4,10 +4,7 @@ import NavigationLink from './NavigationLink'
 
 function Navigation() {
   return (
-    <nav
-      className="flex w-full text-white text-xs"
-      // style={{ filter: 'drop-shadow(5px 5px 10px #666)' }}
-    >
+    <nav className="flex w-full text-white text-xs sticky">
       <NavigationLink href="#projects" text="Projects" />
       <NavigationLink href="#contact" text="Contact" />
       <NavigationLink href="#me" text="Me" />

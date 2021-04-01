@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import PropTypes from 'prop-types'
 
-function NavigationLink({ text, href, alt }) {
+function NavigationLink({ text, href }) {
   return (
     <Link href={href}>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -21,6 +21,5 @@ function NavigationLink({ text, href, alt }) {
 NavigationLink.propTypes = {
   text: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
 }
 export default NavigationLink
