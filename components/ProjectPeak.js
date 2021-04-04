@@ -5,7 +5,7 @@ import { lorem } from '../dev/utilities/index'
 
 function ProjectPeak({ image, name, description, href }) {
   return (
-    <div className="border-white border h-full w-full p-4">
+    <div className="h-full w-full p-4">
       <div className="w-full">
         <img
           className="max-w-full border-2 border-black"
@@ -27,7 +27,7 @@ function ProjectPeak({ image, name, description, href }) {
       <p className="text-sm pt-2">{lorem || description}</p>
       <Link href={href}>
         <a
-          className="mt-3 inline-block"
+          className="mt-3 block"
           style={{ textShadow: '1px 1px 2px aquamarine' }}
         >
           View ->

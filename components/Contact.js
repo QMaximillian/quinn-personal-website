@@ -1,5 +1,6 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
+import SocailLinkList from './SocailLinkList'
 
 function Contact() {
   const emailRef = React.useRef()
@@ -31,20 +32,20 @@ function Contact() {
   }
 
   return (
-    <div className="h-20 w-full flex flex-col justify-center items-center">
+    <div className="w-full flex flex-col justify-center items-center">
       <p>Click to Copy Email</p>
-      <button
-        type="button"
-        onClick={() => copyTextToClipBoard('quinnlashinsky@gmail.com')}
-        onKeyDown={() => copyTextToClipBoard('quinnlashinsky@gmail.com')}
-      >
-        <input
+      <address className="w-full">
+        <button
+          type="button"
           ref={emailRef}
-          className="bg-green-600 w-screen text-center"
-          readOnly
-          value="quinnlashinsky@gmail.com"
-        />
-      </button>
+          onClick={() => copyTextToClipBoard(emailRef.current.innerText)}
+          onKeyDown={() => copyTextToClipBoard(emailRef.current.innerText)}
+          className="bg-green-600 w-full text-center p-2 self-center"
+        >
+          quinnlashinsky@gmail.com
+        </button>
+        <SocailLinkList />
+      </address>
     </div>
   )
 }
