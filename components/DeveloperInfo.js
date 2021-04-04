@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { lorem } from '../dev/utilities/index'
+import { lorem } from '../utilities/index'
 
 function DeveloperInfo() {
   return (
