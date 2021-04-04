@@ -21,32 +21,29 @@ export default function Home() {
           crossOrigin=""
         />
       </Head>
-      <main
-        className="overflow-scroll-y h-full"
-        style={{ background: 'var(--primary-gradient)' }}
-      >
+      <main style={{ background: 'var(--primary-gradient)' }}>
         <GradientBackground>
           <DeveloperInfo />
           <SectionBreak />
-          <div
+          <section
             className="w-full h-full flex flex-col justify-center items-center p-2"
             id="skills"
           >
             <Skills />
-          </div>
+          </section>
           <SectionBreak />
-          <div id="projects">
+          <section id="projects">
             <ProjectList>
               {projects.map((project) => (
                 <ProjectPeak {...project} key={project.name} />
               ))}
             </ProjectList>
-          </div>
+          </section>
 
           <SectionBreak />
-          <div id="contact">
+          <section id="contact">
             <Contact />
-          </div>
+          </section>
         </GradientBackground>
       </main>
     </>

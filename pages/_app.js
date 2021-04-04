@@ -30,8 +30,7 @@ function MyApp({ Component, pageProps, router }) {
   const shouldReduceMotion = useReducedMotion()
   const reducedMotionOpacity = shouldReduceMotion ? 1 : 0
   return (
-    <AnimatePresence exitBeforeEnter>
-      <Navigation />
+    <AnimatePresence>
       <motion.div
         key={router.route}
         initial={{ opacity: reducedMotionOpacity }}
@@ -39,6 +38,9 @@ function MyApp({ Component, pageProps, router }) {
         exit={{ opacity: reducedMotionOpacity }}
         style={{ background: 'var(--primary-gradient' }}
       >
+        <header className="sticky top-0">
+          <Navigation />
+        </header>
         <Component {...pageProps} />
       </motion.div>
     </AnimatePresence>

@@ -10,7 +10,7 @@ function NavigationLink({ text, href }) {
         style={{
           background: 'var(--primary-gradient)',
         }}
-        className="w-full py-4 sm:min-w-min md:text-lg text-center border-2 border-black hover:text-green-300 hover:border-green-300 focus:text-green-300 focus:border-green-300 active:text-green-300 active:border-green-300"
+        className="w-full py-4 sm:min-w-min md:text-lg text-center hover:text-green-300 hover:border-green-300 focus:text-green-300 focus:border-green-300 active:text-green-300 active:border-green-300"
       >
         {text}
       </a>

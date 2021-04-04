@@ -30,7 +30,7 @@ function WhoAmIDetails() {
           Who Am I?
         </p>
       </button>
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence>
         {isOpen && (
           <motion.div
             key={router.route}

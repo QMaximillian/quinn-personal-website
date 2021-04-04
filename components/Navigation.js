@@ -4,7 +4,7 @@ import NavigationLink from './NavigationLink'
 
 function Navigation() {
   return (
-    <nav className="flex w-full text-white text-xs sticky">
+    <nav className="flex w-full text-white text-xs border-2  border-black">
       <NavigationLink href="/#projects" text="Projects" />
       <NavigationLink href="/#contact" text="Contact" />
       <NavigationLink href="/#me" text="Me" />

@@ -5,7 +5,7 @@ function DeveloperInfo() {
   return (
     <div
       style={{ background: 'var(--primary-gradient)' }}
-      className=" text-white p-4 border-2 border-red-500 w-full tracking-wide font-bold flex flex-col justify-center items-center"
+      className=" text-white p-4 w-full tracking-wide font-bold flex flex-col justify-center items-center"
     >
       <div className="w-full">
         <h1 className="text-yellow-500 text-5xl">

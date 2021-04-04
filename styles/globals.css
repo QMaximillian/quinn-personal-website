@@ -17,7 +17,7 @@
 
   html,
   body {
-    @apply h-full w-full;
+    @apply h-full w-full relative;
     scroll-behavior: smooth;
   }
 
