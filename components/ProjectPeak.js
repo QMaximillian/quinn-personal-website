@@ -1,7 +1,7 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
-import { lorem } from '../dev/utilities/index'
+import { lorem } from '../dev/utilities/index.js'
 
 function ProjectPeak({ image, name, description, href }) {
   return (
