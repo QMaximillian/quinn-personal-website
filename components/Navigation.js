@@ -5,10 +5,10 @@ import NavigationLink from './NavigationLink'
 function Navigation() {
   return (
     <nav className="flex w-full text-white text-xs sticky">
-      <NavigationLink href="#projects" text="Projects" />
-      <NavigationLink href="#contact" text="Contact" />
-      <NavigationLink href="#me" text="Me" />
-      <NavigationLink href="#skills" text="Skills" />
+      <NavigationLink href="/#projects" text="Projects" />
+      <NavigationLink href="/#contact" text="Contact" />
+      <NavigationLink href="/#me" text="Me" />
+      <NavigationLink href="/#skills" text="Skills" />
     </nav>
   )
 }

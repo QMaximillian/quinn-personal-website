@@ -1,3 +1,4 @@
+import React from 'react'
 import skills from '../skills.json'
 
 export default function Skills() {
@@ -12,18 +13,15 @@ export default function Skills() {
             <ul className="text-center">{skill.name}</ul>
             <div className="w-full flex">
               {skill.frameworks?.map((framework, i) => (
-                <>
-                  <li
-                    key={framework}
-                    className=" text-yellow-500 font-medium w-full block"
-                  >
+                <React.Fragment key={framework}>
+                  <li className=" text-yellow-500 font-medium w-full block">
                     {framework}
                   </li>
 
                   {i !== skill.frameworks.length - 1 && (
                     <span className="mx-2"> • </span>
                   )}
-                </>
+                </React.Fragment>
               ))}
             </div>
           </div>
