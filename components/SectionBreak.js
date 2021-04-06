@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function SectionBreak({ children }) {
   return (
-    <div className="p-2 my-10 mx-20 h-20 border-white border-t-2 border-b-2">
+    <div className="p-2 my-10 mx-20 h-20 sm:h-28 border-white border-t-2 border-b-2">
       {children}
     </div>
   )

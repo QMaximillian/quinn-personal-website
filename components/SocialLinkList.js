@@ -6,14 +6,14 @@ import {
   faDev,
 } from '@fortawesome/free-brands-svg-icons'
 
-function SocailLinkList() {
+function SocialLinkList() {
   return (
     <div className="flex justify-center items-center my-2">
       <a
         href="https://github.com/QMaximillian"
         target="_blank"
         rel="noreferrer"
-        className="w-8"
+        className="w-8 sm:w-10"
       >
         <FontAwesomeIcon icon={faGithubSquare} />
       </a>
@@ -22,7 +22,7 @@ function SocailLinkList() {
         href="https://twitter.com/quinn_max_codes"
         target="_blank"
         rel="noreferrer"
-        className="w-8 mx-2"
+        className="w-8 sm:w-10 mx-2 sm:mx-3"
       >
         <FontAwesomeIcon icon={faTwitterSquare} />
       </a>
@@ -30,7 +30,7 @@ function SocailLinkList() {
         href="https://dev.to/qmaximillian"
         target="_blank"
         rel="noreferrer"
-        className="w-8"
+        className="w-8 sm:w-10"
       >
         <FontAwesomeIcon icon={faDev} />
       </a>
@@ -38,5 +38,5 @@ function SocailLinkList() {
   )
 }
 
-SocailLinkList.displayName = 'SocailLinkList'
-export default SocailLinkList
+SocialLinkList.displayName = 'SocialLinkList'
+export default SocialLinkList
