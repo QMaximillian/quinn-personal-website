@@ -36,7 +36,6 @@ function MyApp({ Component, pageProps, router }) {
         initial={{ opacity: reducedMotionOpacity }}
         animate={{ opacity: 1 }}
         exit={{ opacity: reducedMotionOpacity }}
-        style={{ background: 'var(--primary-gradient' }}
       >
         <header className="sticky top-0">
           <Navigation />

@@ -21,7 +21,7 @@ export default function Home() {
           crossOrigin=""
         />
       </Head>
-      <main style={{ background: 'var(--primary-gradient)' }}>
+      <main>
         <GradientBackground>
           <DeveloperInfo />
           <SectionBreak />

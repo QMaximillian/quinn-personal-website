@@ -3,10 +3,7 @@ import { lorem } from '../utilities/index'
 
 function DeveloperInfo() {
   return (
-    <div
-      style={{ background: 'var(--primary-gradient)' }}
-      className=" text-white p-4 w-full tracking-wide font-bold flex flex-col justify-center items-center"
-    >
+    <div className="text-white p-4 w-full tracking-wide font-bold flex flex-col justify-center items-center">
       <div className="w-full pt-4">
         <h1 className="text-yellow-500 text-5xl sm:text-8xl">
           Hello!
