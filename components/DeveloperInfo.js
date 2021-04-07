@@ -16,7 +16,7 @@ function DeveloperInfo() {
         <div className="text-lg sm:text-2xl font-semibold">
           Junior Web Developer
         </div>
-        <p className="pt-2 sm:pt-4 text-base font-light">{lorem}</p>
+        <p className="pt-2 sm:pt-3 text-base font-light">{lorem}</p>
       </div>
     </div>
   )
