@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps, router }) {
         <header className="sticky top-0">
           <Navigation />
         </header>
-        <main className="flex-grow items-stretch">
+        <main className="flex-grow flex items-stretch">
           <GradientBackground>
             <Component {...pageProps} />
           </GradientBackground>
