@@ -16,7 +16,7 @@
 
   html,
   body {
-    @apply relative;
+    @apply min-h-full w-full flex relative;
     scroll-behavior: smooth;
   }
 

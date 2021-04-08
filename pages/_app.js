@@ -36,12 +36,12 @@ function MyApp({ Component, pageProps, router }) {
         initial={{ opacity: reducedMotionOpacity }}
         animate={{ opacity: 1 }}
         exit={{ opacity: reducedMotionOpacity }}
-        className="h-full flex flex-col"
+        className="flex flex-col min-h-full"
       >
         <header className="sticky top-0">
           <Navigation />
         </header>
-        <main className="primary-gradient overflow-y-scroll">
+        <main className="primary-gradient flex-grow">
           <Component {...pageProps} />
         </main>
       </motion.div>
