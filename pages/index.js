@@ -21,31 +21,30 @@ export default function Home() {
           crossOrigin=""
         />
       </Head>
-      <main>
-        <GradientBackground>
-          <DeveloperInfo />
-          <SectionBreak />
-          <section
-            className="w-full h-full flex flex-col justify-center items-center p-2"
-            id="skills"
-          >
-            <Skills />
-          </section>
-          <SectionBreak />
-          <section id="projects">
-            <ProjectList>
-              {projects.map((project) => (
-                <ProjectPeak {...project} key={project.name} />
-              ))}
-            </ProjectList>
-          </section>
 
-          <SectionBreak />
-          <section id="contact">
-            <Contact />
-          </section>
-        </GradientBackground>
-      </main>
+      <GradientBackground>
+        <DeveloperInfo />
+        <SectionBreak />
+        <section
+          className="w-full flex flex-col justify-center items-center p-2"
+          id="skills"
+        >
+          <Skills />
+        </section>
+        <SectionBreak />
+        <section id="projects">
+          <ProjectList>
+            {projects.map((project) => (
+              <ProjectPeak {...project} key={project.name} />
+            ))}
+          </ProjectList>
+        </section>
+
+        <SectionBreak />
+        <section id="contact">
+          <Contact />
+        </section>
+      </GradientBackground>
     </>
   )
 }

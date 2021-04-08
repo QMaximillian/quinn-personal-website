@@ -16,7 +16,7 @@
 
   html,
   body {
-    @apply h-full w-full relative;
+    @apply relative;
     scroll-behavior: smooth;
   }
 
@@ -56,6 +56,5 @@
 }
 
 div#__next {
-  height: 100%;
   width: 100%;
 }

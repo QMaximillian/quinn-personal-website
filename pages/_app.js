@@ -30,17 +30,20 @@ function MyApp({ Component, pageProps, router }) {
   const shouldReduceMotion = useReducedMotion()
   const reducedMotionOpacity = shouldReduceMotion ? 1 : 0
   return (
-    <AnimatePresence>
+    <AnimatePresence exitBeforeEnter>
       <motion.div
         key={router.route}
         initial={{ opacity: reducedMotionOpacity }}
         animate={{ opacity: 1 }}
         exit={{ opacity: reducedMotionOpacity }}
+        className="h-full flex flex-col"
       >
         <header className="sticky top-0">
           <Navigation />
         </header>
-        <Component {...pageProps} />
+        <main className="primary-gradient overflow-y-scroll">
+          <Component {...pageProps} />
+        </main>
       </motion.div>
     </AnimatePresence>
   )
