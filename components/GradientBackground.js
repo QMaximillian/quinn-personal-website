@@ -2,7 +2,7 @@ import * as React from 'react'
 import PropTypes from 'prop-types'
 
 function GradientBackground({ children }) {
-  return <div className="h-full w-full">{children}</div>
+  return <div className="primary-gradient flex flex-grow">{children}</div>
 }
 
 GradientBackground.propTypes = {

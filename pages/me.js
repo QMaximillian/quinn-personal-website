@@ -1,3 +1,3 @@
 export default function Me() {
-  return <div className="primary-gradient"></div>
+  return <div></div>
 }

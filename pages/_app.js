@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 import Navigation from '../components/Navigation'
-
+import GradientBackground from '../components/GradientBackground'
 import '../styles/globals.css'
 // @font-face {
 //   font-family: 'Cera Pro Regular';
@@ -41,8 +41,10 @@ function MyApp({ Component, pageProps, router }) {
         <header className="sticky top-0">
           <Navigation />
         </header>
-        <main className="primary-gradient flex-grow">
-          <Component {...pageProps} />
+        <main className="flex-grow items-stretch">
+          <GradientBackground>
+            <Component {...pageProps} />
+          </GradientBackground>
         </main>
       </motion.div>
     </AnimatePresence>
