@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 
 function GradientBackground({ children }) {
   return (
-    <div className="primary-gradient flex flex-grow flex-col">{children}</div>
+    <div className="primary-gradient flex flex-grow flex-col md:items-center">
+      {children}
+    </div>
   )
 }
 

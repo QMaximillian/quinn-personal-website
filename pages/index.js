@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import DeveloperInfo from '../components/DeveloperInfo'
 import Skills from '../components/Skills'
-import GradientBackground from '../components/GradientBackground'
 import SectionBreak from '../components/SectionBreak'
 import Contact from '../components/Contact'
 import ProjectPeak from '../components/ProjectPeak'
@@ -10,7 +9,7 @@ import projects from '../projects.json'
 
 export default function Home() {
   return (
-    <>
+    <div className="md:max-w-3xl">
       <Head>
         <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
@@ -21,30 +20,27 @@ export default function Home() {
           crossOrigin=""
         />
       </Head>
+      <DeveloperInfo />
+      <SectionBreak />
+      <section
+        className="w-full flex flex-col justify-center items-center p-2"
+        id="skills"
+      >
+        <Skills />
+      </section>
+      <SectionBreak />
+      <section id="projects">
+        <ProjectList>
+          {projects.map((project) => (
+            <ProjectPeak {...project} key={project.name} />
+          ))}
+        </ProjectList>
+      </section>
 
-      <GradientBackground>
-        <DeveloperInfo />
-        <SectionBreak />
-        <section
-          className="w-full flex flex-col justify-center items-center p-2"
-          id="skills"
-        >
-          <Skills />
-        </section>
-        <SectionBreak />
-        <section id="projects">
-          <ProjectList>
-            {projects.map((project) => (
-              <ProjectPeak {...project} key={project.name} />
-            ))}
-          </ProjectList>
-        </section>
-
-        <SectionBreak />
-        <section id="contact">
-          <Contact />
-        </section>
-      </GradientBackground>
-    </>
+      <SectionBreak />
+      <section id="contact">
+        <Contact />
+      </section>
+    </div>
   )
 }
