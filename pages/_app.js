@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps, router }) {
         exit={{ opacity: reducedMotionOpacity }}
         className="flex flex-col md:flex-row min-h-full"
       >
-        <div className="sticky top-0 md:h-screen md:w-40">
+        <div className="sticky top-0 md:h-screen md:w-40 lg:w-64 xl:w-96">
           <div className="hidden">
             <DeveloperInfo />
           </div>
