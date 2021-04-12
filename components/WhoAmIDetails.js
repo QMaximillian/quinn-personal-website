@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { AnimatePresence, useReducedMotion, motion } from 'framer-motion'
 import { useRouter } from 'next/router'
-import DeveloperInfo from './DeveloperInfo'
+import DeveloperInfoPreview from './DeveloperInfoPreview'
 
 function WhoAmIDetails() {
   const router = useRouter()
@@ -40,7 +40,7 @@ function WhoAmIDetails() {
             exit="closed"
             className="overflow-hidden"
           >
-            <DeveloperInfo />
+            <DeveloperInfoPreview />
           </motion.div>
         )}
       </AnimatePresence>

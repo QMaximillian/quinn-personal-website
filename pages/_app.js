@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 import Navigation from '../components/Navigation'
 import GradientBackground from '../components/GradientBackground'
-import DeveloperInfo from '../components/DeveloperInfo'
+import DeveloperInfoPreview from '../components/DeveloperInfoPreview'
 import '../styles/globals.css'
 // @font-face {
 //   font-family: 'Cera Pro Regular';
@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps, router }) {
       >
         <div className="sticky top-0 md:h-screen md:w-40 lg:w-64 xl:w-96">
           <div className="hidden">
-            <DeveloperInfo />
+            <DeveloperInfoPreview />
           </div>
           {/* Placeholder Element */}
           <div className="border-2 border-black bg-purple-400 h-1/2 hidden md:block" />

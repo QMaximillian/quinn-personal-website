@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import DeveloperInfo from '../components/DeveloperInfo'
+import DeveloperInfoPreview from '../components/DeveloperInfoPreview'
 import Skills from '../components/Skills'
 import SectionBreak from '../components/SectionBreak'
 import Contact from '../components/Contact'
@@ -20,7 +20,7 @@ export default function Home() {
           crossOrigin=""
         />
       </Head>
-      <DeveloperInfo />
+      <DeveloperInfoPreview />
       <SectionBreak />
       <section
         className="w-full flex flex-col justify-center items-center p-2"
