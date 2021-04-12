@@ -21,7 +21,7 @@ function MoreInfo() {
           // clipPath: 'polygon(0% 0%, 80% 0, 100% 50%, 80% 100%, 0% 100%)',
         }
       }
-      className=" bg-indigo-300 self-start w-full rounded-r-xl"
+      className=" bg-indigo-300 self-start min-w-full rounded-r-xl"
     />
   )
 }
