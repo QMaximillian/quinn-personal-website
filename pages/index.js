@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import DeveloperInfoPreview from '../components/DeveloperInfoPreview'
-import Skills from '../components/Skills'
+import SkillsPreview from '../components/SkillsPreview'
 import SectionBreak from '../components/SectionBreak'
 import Contact from '../components/Contact'
 import ProjectPeak from '../components/ProjectPeak'
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="md:max-w-3xl">
       <Head>
-        <title>Home</title>
+        <title>Home</title>w
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="preload"
@@ -26,7 +26,7 @@ export default function Home() {
         className="w-full flex flex-col justify-center items-center p-2"
         id="skills"
       >
-        <Skills />
+        <SkillsPreview />
       </section>
       <SectionBreak />
       <section id="projects">
