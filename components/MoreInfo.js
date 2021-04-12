@@ -8,20 +8,10 @@ function MoreInfo() {
       layout
       transition={{ duration: 0.7 }}
       animate={{
-        // width: isOpen ? '100%' : '25%',
-        // height: isOpen ? '200px' : '50px',
-        // clipPath: isOpen
-        //   ? 'polygon(0% 0%, 95% 0, 100% 50%, 95% 100%, 0% 100%)'
-        //   : 'polygon(0% 0%, 80% 0, 100% 50%, 80% 100%, 0% 100%)',
-        height: isOpen ? '200px' : '20px',
+        height: isOpen ? '200px' : '1.25rem',
       }}
       onTap={() => setIsOpen((x) => !x)}
-      style={
-        {
-          // clipPath: 'polygon(0% 0%, 80% 0, 100% 50%, 80% 100%, 0% 100%)',
-        }
-      }
-      className=" bg-indigo-300 self-start min-w-full rounded-r-xl"
+      className=" bg-indigo-300 self-start min-w-full rounded-r-xl h-5"
     />
   )
 }
