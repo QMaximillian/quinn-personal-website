@@ -20,6 +20,10 @@ function NavigationLink({ text, href, className }) {
 NavigationLink.propTypes = {
   text: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
+  className: PropTypes.string,
+}
+
+NavigationLink.defaultProps = {
+  className: undefined,
 }
 export default NavigationLink

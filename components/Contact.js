@@ -32,7 +32,7 @@ function Contact() {
   }
 
   return (
-    <div className="w-full flex flex-col justify-center items-center">
+    <section className="w-full flex flex-col justify-center items-center">
       <p className="text-base sm:text-base">Click to Copy Email</p>
       <address className="w-full">
         <button
@@ -46,7 +46,7 @@ function Contact() {
         </button>
         <SocialLinkList />
       </address>
-    </div>
+    </section>
   )
 }
 
