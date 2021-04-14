@@ -14,6 +14,7 @@ module.exports = {
       textColor: ['active'],
       borderColor: ['active'],
       borderWidth: ['first', 'last'],
+      margin: ['even', 'first', 'last'],
     },
   },
   plugins: [],
