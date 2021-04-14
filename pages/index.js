@@ -30,7 +30,7 @@ export default function Home() {
           <Skills />
         </section>
         <SectionBreak />
-        <section id="projects">
+        <section className="p-4" id="projects">
           <ProjectList>
             {projects.map((project) => (
               <ProjectPeak {...project} key={project.name} />
