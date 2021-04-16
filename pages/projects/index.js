@@ -1,10 +1,10 @@
 import { AnimateSharedLayout, motion } from 'framer-motion'
-import ProjectDetailThumbnail from '../components/ProjectDetailThumbnail'
-import ProjectPeak from '../components/ProjectPeak'
-import { lorem } from '../utilities/index'
-import projects from '../projects.json'
-import Spacer from '../components/Spacer'
-import Contact from '../components/Contact'
+import ProjectDetailThumbnail from '../../components/ProjectDetailThumbnail'
+import ProjectPeak from '../../components/ProjectPeak'
+import { lorem } from '../../utilities/index'
+import projects from '../../projects.json'
+import Spacer from '../../components/Spacer'
+import Contact from '../../components/Contact'
 
 function Project() {
   return (
