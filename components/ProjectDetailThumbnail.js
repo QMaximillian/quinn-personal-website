@@ -30,11 +30,11 @@ function ProjectDetailThumbnail({
             {projectName}
           </p>
         </div>
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence>
           {isOpen && (
             <>
               <motion.div
-                initial={{ height: shouldReduceMotion ? 'auto ' : 0 }}
+                initial={{ height: shouldReduceMotion ? 'auto' : 0 }}
                 animate={{ height: 'auto' }}
                 exit={{ height: shouldReduceMotion ? 'auto ' : 0 }}
                 className="self-start text-left flex"

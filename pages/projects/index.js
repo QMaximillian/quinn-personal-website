@@ -1,4 +1,3 @@
-import { AnimateSharedLayout, motion } from 'framer-motion'
 import ProjectDetailThumbnail from '../../components/ProjectDetailThumbnail'
 import ProjectPeak from '../../components/ProjectPeak'
 import { lorem } from '../../utilities/index'
@@ -32,13 +31,9 @@ function Project() {
         </Spacer>
         <Spacer>
           <h2 className="text-shadow-violet">Other Projects</h2>
-          <AnimateSharedLayout>
-            <motion.ul layout>
-              <ProjectDetailThumbnail projectName="Simon Says" />
-              <ProjectDetailThumbnail projectName="Flashcards" />
-              <ProjectDetailThumbnail projectName="Smart Shopping Cart" />
-            </motion.ul>
-          </AnimateSharedLayout>
+          <ProjectDetailThumbnail projectName="Simon Says" />
+          <ProjectDetailThumbnail projectName="Flashcards" />
+          <ProjectDetailThumbnail projectName="Smart Shopping Cart" />
         </Spacer>
       </div>
       <Contact />
