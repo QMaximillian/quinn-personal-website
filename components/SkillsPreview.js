@@ -4,7 +4,7 @@ import skills from '../skills.json'
 export default function Skills() {
   return (
     <>
-      <div className="text-2xl sm:text-4xl text-green-300 underline">
+      <div className="text-2xl sm:text-4xl text-green-300 underline text-center">
         Skills
       </div>
       <div className="flex flex-col justify-center items-center pt-1 sm:pt-4">

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import DeveloperInfoPreview from '../components/DeveloperInfoPreview'
-import Skills from '../components/Skills'
+import SkillsPreview from '../components/SkillsPreview'
 import SectionBreak from '../components/SectionBreak'
 import Contact from '../components/Contact'
 import ProjectPeak from '../components/ProjectPeak'
@@ -27,10 +27,10 @@ export default function Home() {
           className="w-full flex flex-col justify-center items-center p-2"
           id="skills"
         >
-          <Skills />
+          <SkillsPreview />
         </section>
         <SectionBreak />
-        <section className="p-4" id="projects">
+        <section id="projects">
           <ProjectList>
             {projects.map((project) => (
               <ProjectPeak {...project} key={project.name} />
