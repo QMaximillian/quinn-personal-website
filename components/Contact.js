@@ -2,7 +2,7 @@ import * as React from 'react'
 import PropTypes from 'prop-types'
 import SocialLinkList from './SocialLinkList'
 
-function Contact() {
+function Contact({ onClick }) {
   const emailRef = React.useRef()
 
   function fallbackCopyTextToClipboard() {
@@ -31,6 +31,11 @@ function Contact() {
       .catch(() => console.log('failure'))
   }
 
+  function handleClick() {
+    onClick()
+    copyTextToClipBoard(emailRef.current.innerText)
+  }
+
   return (
     <section className="w-full flex flex-col justify-center items-center">
       <p className="text-base sm:text-base">Click to Copy Email</p>
@@ -38,8 +43,8 @@ function Contact() {
         <button
           type="button"
           ref={emailRef}
-          onClick={() => copyTextToClipBoard(emailRef.current.innerText)}
-          onKeyDown={() => copyTextToClipBoard(emailRef.current.innerText)}
+          onClick={handleClick}
+          onKeyDown={handleClick}
           className="bg-green-600 sm:h-12 w-full text-center p-2 self-center text-base sm:text-lg"
         >
           quinnlashinsky@gmail.com
@@ -48,6 +53,14 @@ function Contact() {
       </address>
     </section>
   )
+}
+
+Contact.propTypes = {
+  onClick: PropTypes.func,
+}
+
+Contact.defaultProps = {
+  onClick: () => {},
 }
 
 Contact.displayName = 'Contact'
