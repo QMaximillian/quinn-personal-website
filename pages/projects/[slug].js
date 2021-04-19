@@ -1,5 +1,12 @@
+import ImageCarousel from '../../components/ImageCarousel'
 function ProjectDetail({ name, image, description }) {
-  return <div />
+  return (
+    <>
+      <div className="h-1/2 w-full relative flex flex-col overflow-hidden bg-currentColor justify-start">
+        <ImageCarousel />
+      </div>
+    </>
+  )
 }
 
 export async function getStaticPaths() {
