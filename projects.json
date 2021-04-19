@@ -6,7 +6,8 @@
             "all": []
         },
         "description": "", 
-        "href": "/projects/flashcards"
+        "href": "/projects/flashcards",
+        "slug": "flashcards"
     },
     {
         "name": "Smart Shopping List",
@@ -15,7 +16,8 @@
             "all": []
         },
         "description": "", 
-        "href": "/projects/smart-shopping-list"
+        "href": "/projects/smart-shopping-list",
+        "slug": "smart-shopping-list"
     },
     {
         "name": "Simon Says",
@@ -24,6 +26,7 @@
             "all": []
         },
         "description": "", 
-        "href": "/projects/simon-says"
+        "href": "/projects/simon-says",
+        "slug": "simon-says"
     }
 ]
