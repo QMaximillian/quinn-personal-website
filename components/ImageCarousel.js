@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 import { wrap } from '@popmotion/popcorn'
 
 const testImages = [
@@ -35,6 +35,7 @@ const swipePower = (offset, velocity) => {
 }
 
 function ImageCarousel() {
+  const shouldReduceMotion = useReducedMotion()
   const [[page, direction], setPage] = React.useState([0, 0])
 
   const imageIndex = wrap(0, testImages.length, page)
@@ -50,7 +51,7 @@ function ImageCarousel() {
           key={page}
           custom={direction}
           src={testImages[imageIndex]}
-          variants={variants}
+          variants={shouldReduceMotion ? {} : variants}
           initial="enter"
           animate="center"
           exit="exit"
@@ -58,7 +59,7 @@ function ImageCarousel() {
             x: { type: 'spring', stiffness: 300, damping: 30 },
             opacity: { duration: 0.1 },
           }}
-          drag="x"
+          drag={shouldReduceMotion ? '' : 'x'}
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={1}
           onDragEnd={(e, { offset, velocity }) => {
