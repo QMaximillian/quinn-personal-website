@@ -15,9 +15,8 @@ function ProjectPeak({ image, title, description, href }) {
       </div>
       <div className="pt-1 sm:pt-4">
         <span
-          className="font-extrabold text-2xl sm:text-3xl leading-relaxed tracking-wide border-b-2"
+          className="text-shadow-orange font-extrabold text-2xl sm:text-3xl leading-relaxed tracking-wide border-b-2"
           style={{
-            textShadow: '1px 1px 2px orange',
             boxShadow: '0px 1px orange',
           }}
         >

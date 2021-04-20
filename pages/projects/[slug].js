@@ -39,7 +39,7 @@ function ProjectDetail({
               rel="noreferrer"
               href={githubLink}
             >
-              View Code (GitHub)
+              View Code
             </a>
           </Spacer>
         )}
