@@ -31,9 +31,9 @@ function Project() {
         </Spacer>
         <Spacer>
           <h2 className="text-shadow-violet">Other Projects</h2>
-          <ProjectDetailThumbnail projectName="Simon Says" />
-          <ProjectDetailThumbnail projectName="Flashcards" />
-          <ProjectDetailThumbnail projectName="Smart Shopping Cart" />
+          <ProjectDetailThumbnail title="Simon Says" />
+          <ProjectDetailThumbnail title="Flashcards" />
+          <ProjectDetailThumbnail title="Smart Shopping Cart" />
         </Spacer>
       </div>
       <Contact />
