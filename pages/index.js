@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import DeveloperInfoPreview from '../components/DeveloperInfoPreview'
-import Skills from '../components/Skills'
+import SkillsPreview from '../components/SkillsPreview'
 import SectionBreak from '../components/SectionBreak'
 import ProjectPeak from '../components/ProjectPeak'
 import ProjectList from '../components/ProjectList'

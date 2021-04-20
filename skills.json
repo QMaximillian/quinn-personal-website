@@ -1,16 +1,15 @@
 [
     {
-        "name": "Javascript",
-        "es": "ES6",
-        "frameworks": ["React.js", "Next.js", "Node.js"] 
-    }, 
-    {
         "name": "HTML"
     }, 
     {
         "name": "CSS",
-        "frameworks": ["TailwindCSS"]
+        "frameworks": ["SASS", "TailwindCSS"]
     },
+    {
+        "name": "Javascript",
+        "frameworks": ["React.js", "Next.js", "Node.js"]
+    }, 
     {
         "name": "Git"
     },

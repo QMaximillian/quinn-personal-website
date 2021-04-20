@@ -1,29 +1,41 @@
 [
     {
-        "name": "Flashcards",
+        "title": "Flashcards",
         "image": {
             "primary": { "alt": "", "src": ""},
             "all": []
         },
         "description": "", 
-        "href": "/projects/flashcards"
+        "href": "/projects/flashcards",
+        "slug": "flashcards",
+        "stack": ["React (CRA)", "Tailwind", "React Spring", "Node.js", "Knex", "Postgres"],
+        "liveWebsite": "https://www.flashcards-qmax.cards/",
+        "githubLink": "https://github.com/QMaximillian/flashcards-project"
     },
     {
-        "name": "Smart Shopping List",
+        "title": "Smart Shopping List",
         "image": {
             "primary": { "alt": "", "src": ""},
             "all": []
         },
         "description": "", 
-        "href": "/projects/smart-shopping-list"
+        "href": "/projects/smart-shopping-list",
+        "slug": "smart-shopping-list",
+        "stack": ["React", "Material UI", "Firebase"],
+        "liveWebsite": "https://tcl-10-smart-shopping-list.netlify.app/",
+        "githubLink": "https://github.com/the-collab-lab/tcl-10-smart-shopping-list"
     },
     {
-        "name": "Simon Says",
+        "title": "Simon Says",
         "image": {
             "primary": { "alt": "", "src": ""},
             "all": []
         },
         "description": "", 
-        "href": "/projects/simon-says"
+        "href": "/projects/simon-says",
+        "slug": "simon-says",
+        "stack": ["React (CRA)", "CSS Modules", "Apollo GraphQL", "Lodash"],
+        "liveWebsite": "https://simon-says-qmax.herokuapp.com/",
+        "githubLink": "https://github.com/QMaximillian/simon-says"
     }
 ]
