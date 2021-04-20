@@ -7,7 +7,7 @@ import { lorem } from '../utilities/index'
 function ProjectDetailThumbnail({
   src = '/images/placeholder-image.png',
   projectDescription = lorem,
-  projectName = 'No Name Given',
+  title = 'No Name Given',
   open = false,
 }) {
   const [isOpen, setIsOpen] = React.useState(open)
@@ -27,7 +27,7 @@ function ProjectDetailThumbnail({
             <Image layout="fill" objectFit="contain" src={src} />
           </div>
           <p className="self-center flex-grow text-shadow-aquamarine">
-            {projectName}
+            {title}
           </p>
         </div>
         <AnimatePresence>
@@ -51,7 +51,7 @@ function ProjectDetailThumbnail({
 
 ProjectDetailThumbnail.propTypes = {
   projectDescription: PropTypes.string.isRequired,
-  projectName: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
   open: PropTypes.bool,
 }

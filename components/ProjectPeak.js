@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'next/link'
 import { lorem } from '../utilities/index'
 
-function ProjectPeak({ image, name, description, href }) {
+function ProjectPeak({ image, title, description, href }) {
   return (
     <div className="h-full w-full">
       <div className="w-full">
@@ -21,7 +21,7 @@ function ProjectPeak({ image, name, description, href }) {
             boxShadow: '0px 1px orange',
           }}
         >
-          {name}
+          {title}
         </span>
       </div>
       <p className="text-sm sm:text-base font-light pt-1 sm:pt-4">
@@ -37,7 +37,7 @@ function ProjectPeak({ image, name, description, href }) {
 }
 
 ProjectPeak.propTypes = {
-  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
   image: PropTypes.shape({
