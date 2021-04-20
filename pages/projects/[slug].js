@@ -26,7 +26,7 @@ function ProjectDetail({
         {liveWebsite && (
           <Spacer className="flex space-x-2">
             <a
-              className="text-shadow-aquamarine border-white border-2 w-full inline-block text-center py-2 rounded-md bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600"
+              className="text-shadow-aquamarine border-white border-2 w-full inline-block text-center py-2 rounded-md bg-gradient-to-r from-purple-500 via-purple-600 to-purple-500"
               target="_blank"
               rel="noreferrer"
               href={liveWebsite}
@@ -34,7 +34,7 @@ function ProjectDetail({
               View Live Site
             </a>
             <a
-              className="text-shadow-aquamarine border-white border-2 w-full inline-block text-center py-2 rounded-md bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600"
+              className="text-shadow-aquamarine border-white border-2 w-full inline-block text-center py-2 rounded-md bg-gradient-to-r from-purple-500 via-purple-600 to-purple-500"
               target="_blank"
               rel="noreferrer"
               href={githubLink}
