@@ -9,7 +9,8 @@
         "href": "/projects/flashcards",
         "slug": "flashcards",
         "stack": ["React (CRA)", "Tailwind", "React Spring", "Node.js", "Knex", "Postgres"],
-        "liveWebsite": "https://www.flashcards-qmax.cards/"
+        "liveWebsite": "https://www.flashcards-qmax.cards/",
+        "githubLink": "https://github.com/QMaximillian/flashcards-project"
     },
     {
         "title": "Smart Shopping List",
@@ -20,8 +21,9 @@
         "description": "", 
         "href": "/projects/smart-shopping-list",
         "slug": "smart-shopping-list",
-        "stack": ["React (CRA)", "Tailwind", "React Spring", "Node.js", "Knex", "Postgres"],
-        "liveWebsite": "https://tcl-10-smart-shopping-list.netlify.app/"
+        "stack": ["React", "Material UI", "Firebase"],
+        "liveWebsite": "https://tcl-10-smart-shopping-list.netlify.app/",
+        "githubLink": "https://github.com/the-collab-lab/tcl-10-smart-shopping-list"
     },
     {
         "title": "Simon Says",
@@ -32,7 +34,8 @@
         "description": "", 
         "href": "/projects/simon-says",
         "slug": "simon-says",
-        "stack": ["React (CRA)", "Tailwind", "React Spring", "Node.js", "Knex", "Postgres"],
-        "liveWebsite": "https://simon-says-qmax.herokuapp.com/"
+        "stack": ["React (CRA)", "CSS Modules", "Apollo GraphQL", "Lodash"],
+        "liveWebsite": "https://simon-says-qmax.herokuapp.com/",
+        "githubLink": "https://github.com/QMaximillian/simon-says"
     }
 ]
