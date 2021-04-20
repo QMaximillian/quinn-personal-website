@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 import ImageCarousel from '../../components/ImageCarousel'
 import Spacer from '../../components/Spacer'
+import ProjectList from '../../components/ProjectList'
+import ProjectPeak from '../../components/ProjectPeak'
 import { lorem } from '../../utilities/index'
 
 function ProjectDetail({
@@ -10,10 +12,11 @@ function ProjectDetail({
   stack,
   liveWebsite,
   githubLink,
+  moreProjects,
 }) {
   return (
     <div className="max-w-3xl">
-      <section className="h-full w-full flex flex-col p-3 overflow-y-scroll">
+      <section className="flex flex-col p-3">
         <div className="h-40 sm:h-80 relative overflow-hidden bg-currentColor">
           <ImageCarousel />
         </div>
@@ -87,6 +90,16 @@ function ProjectDetail({
           <h2 className="text-shadow-violet underline">What I Learned</h2>
           <p>{lorem}</p>
         </Spacer>
+        <Spacer className="mt-24 border-grey-500 border-2 p-4 rounded-lg">
+          <h3 className="text-shadow-violet underline">Other Projects</h3>
+          <ProjectList>
+            <div className="flex-col md:flex-row flex space-y-4 md:space-x-4 md:space-y-0 pt-2">
+              {moreProjects.map((project) => (
+                <ProjectPeak {...project} key={project.name} />
+              ))}
+            </div>
+          </ProjectList>
+        </Spacer>
       </section>
     </div>
   )
@@ -124,6 +137,9 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params: { slug } }) {
   const projectPages = await import('../../projects.json')
   const projectPage = projectPages.default.find((x) => x.slug === slug)
+  const moreProjects = projectPages.default
+    .filter((x) => x.slug !== slug)
+    .slice(0, 3)
 
   return {
     props: {
@@ -135,6 +151,7 @@ export async function getStaticProps({ params: { slug } }) {
       stack: projectPage.stack,
       liveWebsite: projectPage.liveWebsite,
       githubLink: projectPage.githubLink,
+      moreProjects,
     },
   }
 }
