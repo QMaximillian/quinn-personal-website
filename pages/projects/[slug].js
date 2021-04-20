@@ -80,7 +80,7 @@ function ProjectDetail({
         </Spacer>
         <Spacer>
           <div className="w-full">
-            <img className="w-full" src="/images/placeholder-image.png"></img>
+            <img className="w-full" src="/images/placeholder-image.png" />
           </div>
         </Spacer>
         <Spacer>

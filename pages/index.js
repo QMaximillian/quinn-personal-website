@@ -28,7 +28,7 @@ export default function Home() {
             className="w-full flex flex-col justify-center items-center p-2"
             id="skills"
           >
-            <Skills />
+            <SkillsPreview />
           </section>
           <SectionBreak />
           <section id="projects">

@@ -26,7 +26,7 @@ function ContactToastWrapper({ children, message, duration = 3000 }) {
       <AnimatePresence>
         {isVisible && (
           <motion.div
-            className="bg-indigo-500 fixed inset-x-5 md:inset-x-20 lg:inset-x-40 flex text-center justify-center items-center h-10"
+            className="bg-indigo-500 fixed z-50 inset-x-5 md:inset-x-20 lg:inset-x-30 flex text-center justify-center items-center h-10"
             transition={{
               y: { type: 'tween' },
             }}
