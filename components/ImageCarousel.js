@@ -84,7 +84,7 @@ function ImageCarousel() {
               paginate(-1)
             }
           }}
-          onTap={(event, info) => setShowButtons((state) => !state)}
+          onTap={() => setShowButtons((state) => !state)}
         />
       </AnimatePresence>
       <AnimatePresence>
@@ -127,7 +127,6 @@ function ImageCarousel() {
           </>
         )}
       </AnimatePresence>
-      )
     </div>
   )
 }

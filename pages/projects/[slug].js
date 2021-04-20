@@ -2,9 +2,12 @@ import ImageCarousel from '../../components/ImageCarousel'
 function ProjectDetail({ name, image, description }) {
   return (
     <>
-      <div className="h-1/2 w-full relative flex flex-col overflow-hidden bg-currentColor justify-start">
-        <ImageCarousel />
-      </div>
+      <section className="h-full w-full flex flex-col">
+        <div className="h-1/2 w-full relative overflow-hidden bg-currentColor">
+          <ImageCarousel />
+        </div>
+        <h1 className="text-shadow-violet">{name}</h1>
+      </section>
     </>
   )
 }
