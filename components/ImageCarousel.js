@@ -99,11 +99,7 @@ function ImageCarousel() {
               type="button"
               className="transform -translate-y-1/2 absolute inset-y-1/2 left-2 z-10 w-8 h-8 md:w-14 md:h-14 bg-white rounded-full"
               onClick={() => paginate(-1)}
-              onKeyDown={(event) => {
-                if (event.key === 'ArrowLeft') {
-                  paginate(-1)
-                }
-              }}
+              onKeyDown={(event) => event.key === 'ArrowLeft' && paginate(1)}
             >
               <span className="text-black">{'<'}</span>
             </motion.button>
@@ -116,11 +112,7 @@ function ImageCarousel() {
               type="button"
               className="transform -translate-y-1/2 absolute inset-y-1/2 right-2 z-10 w-8 h-8 md:w-14 md:h-14 bg-white rounded-full"
               onClick={() => paginate(1)}
-              onKeyDown={(event) => {
-                if (event.key === 'ArrowRight') {
-                  paginate(1)
-                }
-              }}
+              onKeyDown={(event) => event.key === 'ArrowRight' && paginate(1)}
             >
               <span className="text-black">{'>'}</span>
             </motion.button>

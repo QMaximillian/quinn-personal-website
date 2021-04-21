@@ -34,7 +34,7 @@ export default function Home() {
           <section id="projects">
             <ProjectList>
               {projects.map((project) => (
-                <ProjectPeak {...project} key={project.name} />
+                <ProjectPeak {...project} key={project.title} />
               ))}
             </ProjectList>
           </section>

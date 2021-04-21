@@ -44,7 +44,7 @@ function Contact({ onClick }) {
           type="button"
           ref={emailRef}
           onClick={handleClick}
-          onKeyDown={handleClick}
+          onKeyPress={(event) => event.key === ' ' && handleClick()}
           className="bg-green-600 sm:h-12 w-full text-center p-2 self-center text-base sm:text-lg"
         >
           quinnlashinsky@gmail.com

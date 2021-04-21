@@ -4,12 +4,17 @@ import PropTypes from 'prop-types'
 import Contact from './Contact'
 import Toast from './Toast'
 
-function ContactToastWrapper({ children, message, duration = 3000 }) {
+function ContactToastWrapper({
+  children,
+  message = 'Copied',
+  duration = 3000,
+}) {
   const [isVisible, setIsVisible] = React.useState(false)
   const shouldReduceMotion = useReducedMotion()
 
   function onClick() {
-    setIsVisible((state) => !state)
+    if (isVisible) return
+    setIsVisible(() => true)
   }
 
   React.useEffect(() => {
@@ -56,7 +61,13 @@ function ContactToastWrapper({ children, message, duration = 3000 }) {
 
 ContactToastWrapper.propTypes = {
   children: PropTypes.node,
-  message: PropTypes.string.isRequired,
+  message: PropTypes.string,
+  duration: PropTypes.number,
+}
+
+ContactToastWrapper.defaultProps = {
+  duration: 3000,
+  message: 'Copied',
 }
 
 ContactToastWrapper.defaultProps = {

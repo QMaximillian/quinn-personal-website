@@ -22,9 +22,9 @@ function Project() {
             {projects.map((project) => (
               <div
                 className="md:w-1/3 w-auto mx-1 even:mt-4 first:mr-2 last:ml-2"
-                key={project.name}
+                key={project.title}
               >
-                <ProjectPeak {...project} key={project.name} />
+                <ProjectPeak {...project} key={project.title} />
               </div>
             ))}
           </div>
