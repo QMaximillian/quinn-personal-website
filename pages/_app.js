@@ -32,27 +32,22 @@ function MyApp({ Component, pageProps, router }) {
   const reducedMotionOpacity = shouldReduceMotion ? 1 : 0
   return (
     <AnimatePresence exitBeforeEnter>
-      <motion.div
-        key={router.route}
-        initial={{ opacity: reducedMotionOpacity }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: reducedMotionOpacity }}
-        className="flex flex-col md:flex-row min-h-full"
-      >
-        <div className="sticky z-50 top-0 md:h-screen md:w-40 lg:w-64 xl:w-96">
-          <div className="hidden">
-            <DeveloperInfoPreview />
+      <GradientBackground>
+        <motion.div
+          key={router.route}
+          initial={{ opacity: reducedMotionOpacity }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: reducedMotionOpacity }}
+          className="flex flex-col md:flex-row min-h-full"
+        >
+          <div className="sticky z-50 top-0 md:h-screen md:w-40 lg:w-64 xl:w-96">
+            <Navigation />
           </div>
-          {/* Placeholder Element */}
-          <div className="border-2 border-black bg-purple-400 h-1/2 hidden md:block" />
-          <Navigation />
-        </div>
-        <main className="flex-grow flex md:w-3/4 primary-gradient">
-          <GradientBackground>
+          <main className="flex-grow flex md:w-3/4">
             <Component {...pageProps} />
-          </GradientBackground>
-        </main>
-      </motion.div>
+          </main>
+        </motion.div>
+      </GradientBackground>
     </AnimatePresence>
   )
 }
