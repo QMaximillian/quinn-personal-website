@@ -20,8 +20,8 @@ export default function Home() {
           crossOrigin=""
         />
       </Head>
-      <ContactToastWrapper message="Copied">
-        <div className="md:max-w-3xl">
+      <div className="md:max-w-3xl">
+        <ContactToastWrapper message="Copied">
           <DeveloperInfoPreview />
           <SectionBreak />
           <section
@@ -40,8 +40,8 @@ export default function Home() {
           </section>
 
           <SectionBreak />
-        </div>
-      </ContactToastWrapper>
+        </ContactToastWrapper>
+      </div>
     </>
   )
 }
