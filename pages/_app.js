@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 import Navigation from '../components/Navigation'
 import GradientBackground from '../components/GradientBackground'
-import DeveloperInfoPreview from '../components/DeveloperInfoPreview'
+import ContactToastWrapper from '../components/ContactToastWrapper'
 import '../styles/globals.css'
 // @font-face {
 //   font-family: 'Cera Pro Regular';
@@ -38,12 +38,12 @@ function MyApp({ Component, pageProps, router }) {
           initial={{ opacity: reducedMotionOpacity }}
           animate={{ opacity: 1 }}
           exit={{ opacity: reducedMotionOpacity }}
-          className="flex flex-col md:flex-row min-h-full"
+          className="flex flex-col md:flex-row min-h-full max-w-5xl"
         >
-          <div className="sticky z-50 top-0 md:h-screen md:w-40 lg:w-64 xl:w-96">
+          <div className="sticky z-50 top-0 md:h-screen md:w-1/5 md:pt-6">
             <Navigation />
           </div>
-          <main className="flex-grow flex md:w-3/4">
+          <main className="flex-grow flex md:w-4/5 p-2 md:p-4">
             <Component {...pageProps} />
           </main>
         </motion.div>

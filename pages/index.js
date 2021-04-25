@@ -20,8 +20,8 @@ export default function Home() {
           crossOrigin=""
         />
       </Head>
-      <div className="md:max-w-3xl">
-        <ContactToastWrapper message="Copied">
+      <div>
+        <ContactToastWrapper message="Copied!">
           <DeveloperInfoPreview />
           <SectionBreak />
           <section

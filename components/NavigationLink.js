@@ -2,14 +2,15 @@ import * as React from 'react'
 import Link from 'next/link'
 import PropTypes from 'prop-types'
 
-function NavigationLink({ text, href, className }) {
+function NavigationLink({ text, href, className, textShadow }) {
   return (
     <Link href={href}>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
       <a
         className={
-          className ||
-          `h-10 flex justify-center items-center md:h-full xl:h-2/5 xl:w-1/2 primary-gradient md:bg-none w-full py-4 md:py-0 sm:min-w-min text-center hover:text-green-300 hover:border-green-300 focus:text-green-300 focus:border-green-300 active:text-green-300 active:border-green-300`
+          className
+            ? `${className} ${textShadow}`
+            : `${textShadow} h-10 flex justify-center items-center md:h-full xl:h-2/5 xl:w-1/2 primary-gradient md:bg-none w-full py-4 md:py-0 sm:min-w-min text-center`
         }
       >
         <span>{text}</span>
